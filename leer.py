@@ -103,8 +103,8 @@ solar=np.array([mod1.vectorsolar(dia, hora, lat) for dia in dias for hora in hor
 
 
 #ajustar a las dimensiones del terreno y número de puntos
-mallax=np.linspace(0,50,30)
-mallay=np.linspace(0,40,15)
+mallax=np.linspace(0,60,60)
+mallay=np.linspace(0,40,40)
 malla=np.array([[x,y, 0] for x in mallax for y in mallay])
 factores=np.zeros((dias.shape[0], horas.shape[0], malla.shape[0])) #un svf por punto 
 #un svf por hora y día para tener en cuenta la rotación de las placas
